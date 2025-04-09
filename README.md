@@ -24,7 +24,34 @@ bookstore-api/
 ├── server.js            # Entry point
 ├── README.md
 ```
+## ⚙️ Setup Instructions
 
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/bookstore-api.git
+cd bookstore-api
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env` file in the root:
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/bookstore?retryWrites=true&w=majority
+JWT_SECRET=supersecretkey
+PORT=5000
+```
+### 4. Start the Server
+```bash
+npm run start
+```
+Server will run on:
+```
+http://localhost:5000
+```
 ---
 
 ## Authentication Routes
