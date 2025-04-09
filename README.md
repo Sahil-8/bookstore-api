@@ -27,7 +27,7 @@ bookstore-api/
 
 ---
 
-## 🔐 Authentication Routes
+## Authentication Routes
 
 ### POST `/api/auth/signup`
 Create new user
@@ -36,9 +36,8 @@ Create new user
   "email": "user@example.com",
   "password": "secure123"
 }
-![image](https://github.com/user-attachments/assets/4b9c30c3-dfa5-4130-94ce-ca60391ecd86)
-
 ```
+![image](https://github.com/user-attachments/assets/4b9c30c3-dfa5-4130-94ce-ca60391ecd86)
 
 ### POST `/api/auth/login`
 Login existing user
@@ -47,10 +46,10 @@ Login existing user
   "email": "user@example.com",
   "password": "secure123"
 }
+```
 ![image](https://github.com/user-attachments/assets/b21854ad-48e8-4cf3-9e02-852cec8177d9)
 
-```
-## 📚 Books Routes (Protected)
+### Books Routes (Protected)
 
 > All require Authorization header.
 
@@ -65,10 +64,9 @@ Create new book
   "rating": 4.5,
   "publishedDate": "2018-10-16"
 }
+```
 ![image](https://github.com/user-attachments/assets/cc8d856a-8de2-4530-ba92-de5742e5eef6)
 ![image](https://github.com/user-attachments/assets/9590d9dd-bb04-4fe0-a974-17c7c5cb5717)
-
-```
 
 ### GET `/api/books`
 Query examples:
@@ -92,9 +90,9 @@ Update book
 {
   "price": 30
 }
-![image](https://github.com/user-attachments/assets/ff2260e4-28e1-4584-8131-51daa64d7705)
 
 ```
+![image](https://github.com/user-attachments/assets/ff2260e4-28e1-4584-8131-51daa64d7705)
 
 ### DELETE `/api/books/:id`
 Delete book
